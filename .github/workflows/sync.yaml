@@ -7,15 +7,15 @@ on:
     - cron: "0 */12 * * *"
   workflow_dispatch:
 env:
-  ITS_IMDB_COOKIEATMAIN: ${{ Atza|IwEBIOHIrU3lOSDuhilHmbrn4qaeSXdoQyU6eYQIS1XuuZfq2vw9yEwz8vwerSZBmNBY2bi3p6PDobU8344JY2GYrfnCdN82XfeMF1jFpdl38sb9-hRNe1rOtRDkjilHlgXp21w9F7aHqwfzph_ght2MwtKbPr9cjULZKnbR2xg4EltyHPdMirmwDzG42zcDokyVh_YzpK9lZEB5NOr7XzgamSwhs40TznElNynPe0m_ukv8sw }}
-  ITS_IMDB_COOKIEUBIDMAIN: ${{ 131-9074478-8950830 }}
-  ITS_IMDB_LISTS: ${{ ls521051937 }}
-  ITS_TRAKT_EMAIL: ${{ luca-corti@hotmail.it }}
-  ITS_TRAKT_PASSWORD: ${{ Juventus1#1 }}
-  ITS_TRAKT_CLIENTID: ${{ f1545a6370620a89c6d3ca6856c64f36bc5463e7d0f3113628cbbae4f87bea90 }}
-  ITS_TRAKT_CLIENTSECRET: ${{ efedd4539254117ed96856b6f0f556c5abd5909660dc2475c33044cb12c7de87 }}
-  ITS_SYNC_SKIPHISTORY: ${{ true }}
-  ITS_SYNC_MODE: ${{ full }}
+  ITS_IMDB_COOKIEATMAIN: ${{ secrets.IMDB_COOKIEATMAIN }}
+  ITS_IMDB_COOKIEUBIDMAIN: ${{ secrets.IMDB_COOKIEUBIDMAIN }}
+  ITS_IMDB_LISTS: ${{ secrets.IMDB_LISTS }}
+  ITS_TRAKT_EMAIL: ${{ secrets.TRAKT_EMAIL }}
+  ITS_TRAKT_PASSWORD: ${{ secrets.TRAKT_PASSWORD }}
+  ITS_TRAKT_CLIENTID: ${{ secrets.TRAKT_CLIENTID }}
+  ITS_TRAKT_CLIENTSECRET: ${{ secrets.TRAKT_CLIENTSECRET }}
+  ITS_SYNC_SKIPHISTORY: ${{ secrets.SYNC_SKIPHISTORY }}
+  ITS_SYNC_MODE: ${{ secrets.SYNC_MODE }}
 jobs:
   sync:
     runs-on: ubuntu-latest
