@@ -14,7 +14,6 @@ IMDB:
     LISTS:
         - ls521051937
         - ls529890900
-        - ur130432566
 SYNC:
     # Sync mode to be used when running the application
     # The value must be one of the following:
