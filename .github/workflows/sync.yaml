@@ -14,7 +14,7 @@ env:
   ITS_TRAKT_PASSWORD: ${{ secrets.Juventus1#1 }}
   ITS_TRAKT_CLIENTID: ${{ secrets.f1545a6370620a89c6d3ca6856c64f36bc5463e7d0f3113628cbbae4f87bea90 }}
   ITS_TRAKT_CLIENTSECRET: ${{ secrets.efedd4539254117ed96856b6f0f556c5abd5909660dc2475c33044cb12c7de87 }}
-  ITS_SYNC_SKIPHISTORY: ${{ secrets.yes }}
+  ITS_SYNC_SKIPHISTORY: ${{ secrets.true }}
   ITS_SYNC_MODE: ${{ secrets.full }}
 jobs:
   sync:
